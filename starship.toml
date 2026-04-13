@@ -1,0 +1,22 @@
+add_newline = false
+
+format = """
+$kubernetes\
+$directory\
+$git_branch\
+$character"""
+
+[kubernetes]
+symbol = ""
+
+[directory]
+truncate_to_repo = false
+
+[git_branch]
+symbol = ""
+
+
+[character]
+success_symbol = "[→](bold green)"
+error_symbol = "[→](bold red)"
+vimcmd_symbol = "[←](bold green)"
