@@ -1,7 +1,9 @@
 # Pour mettre zsh en default : chsh -s $(which zsh)
 
+# Créer une nouvelle session avec un nom unique basé sur l'heure
 if command -v tmux >/dev/null 2>&1 && [ -z "$TMUX" ] && [[ $- == *i* ]]; then
-  tmux attach -t main 2>/dev/null || tmux new-session -s main
+  session_name="term-$(date +%s)"
+  tmux new-session -s "$session_name"
 fi
 
 # Lines configured by zsh-newuser-install
@@ -38,7 +40,7 @@ export PATH="${PATH}:/usr/local/go/bin:${GOPATH}/bin"
 klogs() {
   if [ -z "$1" ]; then
     local pod
-    pod=$(kubectl get pods -A --no-headers | fzf | awk '{print $1"/"$2}')
+    pod=$(kubectl get pods --no-headers | fzf | awk '{print $1"/"$2}')
     local ns="${pod%%/*}"
     local name="${pod##*/}"
     kubectl logs -f -n "${ns}" "${name}"

@@ -7,14 +7,18 @@ $git_branch\
 $character"""
 
 [kubernetes]
+disabled = false
 symbol = ""
+format = '[$context \($namespace\)]($style) '
+style = "bold cyan"
+
 
 [directory]
+truncation_length = 0
 truncate_to_repo = false
 
 [git_branch]
 symbol = ""
-
 
 [character]
 success_symbol = "[→](bold green)"
