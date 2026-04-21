@@ -26,6 +26,20 @@ return {
     },
   },
 
+  -- ─── Neo-tree : toujours afficher les fichiers cachés ────────────
+  {
+    "nvim-neo-tree/neo-tree.nvim",
+    opts = {
+      filesystem = {
+        filtered_items = {
+          visible = true,       -- Affiche les fichiers cachés (grisés)
+          hide_dotfiles = false,
+          hide_gitignored = false,
+        },
+      },
+    },
+  },
+
   -- ─── Cmdline en bas (désactive le popup central de noice) ─────────
   {
     "folke/noice.nvim",

@@ -1,0 +1,86 @@
+# Tokyo Night Transparent
+k9s:
+  body:
+    fgColor: "#c0caf5"
+    bgColor: default
+    logoColor: "#7aa2f7"
+  prompt:
+    fgColor: "#c0caf5"
+    bgColor: default
+    suggestColor: "#7aa2f7"
+  info:
+    fgColor: "#bb9af7"
+    sectionColor: "#7aa2f7"
+  dialog:
+    fgColor: "#c0caf5"
+    bgColor: default
+    buttonFgColor: "#1a1b26"
+    buttonBgColor: "#7aa2f7"
+    buttonFocusFgColor: "#1a1b26"
+    buttonFocusBgColor: "#bb9af7"
+    labelFgColor: "#ff9e64"
+    fieldFgColor: "#c0caf5"
+  frame:
+    border:
+      fgColor: "#3d59a1"
+      focusColor: "#7aa2f7"
+    menu:
+      fgColor: "#a9b1d6"
+      keyColor: "#bb9af7"
+      numKeyColor: "#ff9e64"
+    crumbs:
+      fgColor: "#1a1b26"
+      bgColor: "#7aa2f7"
+      activeColor: "#ff9e64"
+    status:
+      newColor: "#7aa2f7"
+      modifyColor: "#e0af68"
+      addColor: "#9ece6a"
+      errorColor: "#f7768e"
+      pendingColor: "#ff9e64"
+      highlightColor: "#7dcfff"
+      killColor: "#db4b4b"
+      completedColor: "#565f89"
+    title:
+      fgColor: "#c0caf5"
+      bgColor: default
+      highlightColor: "#bb9af7"
+      counterColor: "#7aa2f7"
+      filterColor: "#bb9af7"
+  views:
+    charts:
+      bgColor: default
+      defaultDialColors:
+        - "#9ece6a"
+        - "#f7768e"
+      defaultChartColors:
+        - "#9ece6a"
+        - "#f7768e"
+    table:
+      fgColor: "#c0caf5"
+      bgColor: default
+      cursorFgColor: "#1a1b26"
+      cursorBgColor: "#7aa2f7"
+      markColor: "#e0af68"
+      header:
+        fgColor: "#a9b1d6"
+        bgColor: default
+        sorterColor: "#7dcfff"
+    xray:
+      fgColor: "#c0caf5"
+      bgColor: default
+      cursorColor: "#7aa2f7"
+      graphicColor: "#bb9af7"
+      showIcons: false
+    yaml:
+      keyColor: "#7aa2f7"
+      colonColor: "#7dcfff"
+      valueColor: "#bb9af7"
+    logs:
+      fgColor: "#c0caf5"
+      bgColor: default
+      indicator:
+        fgColor: "#c0caf5"
+        bgColor: default
+        toggleOnColor: "#9ece6a"
+        toggleOffColor: "#565f89"
